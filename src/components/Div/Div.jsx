@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 import { FiDollarSign } from 'react-icons/Fi';
 import { BsBook } from 'react-icons/Bs';
 import PropTypes from 'prop-types';
 
-const Div = ({ div }) => {
+const Div = ({ div,handleButton}) => {
 
     const { img, course_name, course_details, price, credit } = div;
 
     return (
-        <div className='bg-slate-100 rounded-lg p-2'>
+        <div className='bg-slate-100 rounded-lg p-2 '>
             <img src={img} alt={`Cover picture of the course_name ${course_name}`} />
             <h3 className="mt-2 text-lg font-semibold">{course_name}</h3>
             <h2 className="mt-2 text-sm font-normal text-[#1C1B1B99]">{course_details}</h2>
@@ -21,9 +22,9 @@ const Div = ({ div }) => {
                 </div>
                 <p>Credit : {credit}</p>
             </div>
-            <button className='mt-2 text-lg font-semibold text-white bg-[#2F80ED] w-full rounded-lg'>Select</button>
+            <button onClick={()=>handleButton(div)} className='mt-2 text-lg font-semibold text-white bg-[#2F80ED] w-full rounded-lg'>Select</button>
         </div>
-        
+
     );
 };
 Div.propTypes = {
