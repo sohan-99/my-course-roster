@@ -41,7 +41,7 @@ const Section = () => {
           ></Div>
         ))}
       </div>
-      <div className="">
+      <div>
         <Calculate items={items}></Calculate>
       </div>
       <ToastContainer/>
