@@ -19,13 +19,13 @@ const Section = () => {
         return alert("Alaready Exist!");
       } else {
         setItems([...items, data]);
-        }
+      }
     } else {
       setItems([data]);
     }
   };
 
- 
+
 
   return (
     <div className=" flex  space-x-4 mt-8">
@@ -47,4 +47,7 @@ const Section = () => {
 };
 
 export default Section;
+
+
+
 

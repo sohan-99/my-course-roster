@@ -3,7 +3,7 @@ import { FiDollarSign } from 'react-icons/Fi';
 import { BsBook } from 'react-icons/Bs';
 import PropTypes from 'prop-types';
 
-const Div = ({ div,handleButton}) => {
+const Div = ({ div, handleButton }) => {
 
     const { img, course_name, course_details, price, credit } = div;
 
@@ -22,7 +22,7 @@ const Div = ({ div,handleButton}) => {
                 </div>
                 <p>Credit : {credit}</p>
             </div>
-            <button onClick={()=>handleButton(div)} className='mt-2 text-lg font-semibold text-white bg-[#2F80ED] w-full rounded-lg'>Select</button>
+            <button onClick={() => handleButton(div)} className='mt-2 text-lg font-semibold text-white bg-[#2F80ED] w-full rounded-lg'>Select</button>
         </div>
 
     );
@@ -32,4 +32,18 @@ Div.propTypes = {
 }
 
 export default Div;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

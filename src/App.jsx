@@ -5,7 +5,7 @@ import Section from './components/Section/Section'
 
 function App() {
 
- 
+
   return (
     <>
 
@@ -13,7 +13,8 @@ function App() {
       <div className='md:flex space-x-4  w-full m-10'>
 
         <Section></Section>
-       
+
+
       </div>
 
     </>
